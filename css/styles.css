@@ -1,7 +1,7 @@
 .boss {
   width: 500px;
   height: 500px;
-  background-image: url("/assets/Boss2.jpg");
+  background-image: url("../assets/Boss2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
