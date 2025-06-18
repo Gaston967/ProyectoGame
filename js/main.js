@@ -31,7 +31,7 @@ class Boss
       {
         console.log("cambia la imagen del boss");
         const boss = document.querySelector('.boss');
-        boss.style.backgroundImage = "url('../assets/Diablo.png')"
+        boss.style.backgroundImage = "url('assets/Diablo.png')"
         document.getElementById("emojiBoss").textContent = "💀 Ganaste! 💀"
         return;
       }
@@ -92,6 +92,14 @@ class Heroe
 
 function newGame() 
 {
+  alert("¡Llegaste Jefe Final!");
+  const nombre = prompt("¿Cómo te llamás, valiente guerrero?");
+  const listo = confirm(`¿Estás listo para enfrentar al Amo de la Masmorra, ${nombre}?`);
+  if (!listo) 
+  {
+    alert("¡Regresá cuando estés preparado!");
+    return;
+  }
   jefeFinal = new Boss(vidaBoss);
   Artur = new Heroe(vidaHeroe);
   Gandalf = new Heroe(vidaHeroe);
