@@ -1,0 +1,12 @@
+@use 'boss';
+@use 'variables';
+@use 'heroes';
+@use 'marcos';
+@use 'interfaz';
+
+body{
+  background-image: url(/assets/Fondo\ calabozo\ 2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: red;
+}

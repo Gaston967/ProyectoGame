@@ -1,0 +1,141 @@
+.boss {
+  width: 500px;
+  height: 500px;
+  background-image: url("/assets/Boss2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroe {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/Heroe.png");
+}
+
+.hechicero {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/Hechicero.png");
+}
+
+.arquera {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/arquera.jpg");
+}
+
+.marcoBoss {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.marcoHeroes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.marcoCampoBatalla {
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  width: 300px;
+  background-color: rgba(255, 0, 0, 0.4509803922);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.interfaz {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.inferfazBotones {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectorHeroe {
+  width: 300px;
+  font-size: 20px;
+  background-color: rgba(255, 0, 0, 0.4509803922);
+  color: white;
+}
+
+.barra {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+  align-items: center;
+}
+
+.barra-container {
+  width: 200px;
+  height: 25px;
+  background-color: #333;
+  border: 2px solid #555;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.barra-interna {
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.vida {
+  background-color: crimson;
+}
+
+.mana {
+  background-color: royalblue;
+}
+
+.contenedorBarras {
+  display: flex;
+  justify-content: space-around;
+}
+
+.emoji-boss {
+  font-size: 45px;
+  filter: drop-shadow(0 0 4px red);
+}
+
+body {
+  background-image: url(/assets/Fondo\ calabozo\ 2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="js/main.js" defer></script>
+    <title>Jefe Final: El Amo de la Masmorra</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</head>
+<body onload="newGame()">
+
+<div class="marcoBoss">
+
+  <div class="boss"></div>
+
+  <div class="barra">
+    <label><span id="emojiBoss" class="emoji-boss">👿</span> Vida_</label>
+    <div class="barra-container">
+      <div id="vida-barra-boss" class="barra-interna vida"></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="marcoCampoBatalla">
+    <div class="marcoHeroes">      
+      <div class="hechicero"></div>  
+      <div class="heroe"></div>
+      <div class="arquera"></div>          
+    </div>
+
+  <div class="contenedorBarras">
+    <div class="marcoBarra">  
+      <div class="barra">
+        <label>❤️ Vida_</label>
+        <div class="barra-container">
+          <div id="vida-barra-hechicero" class="barra-interna vida"></div>
+        </div>
+      </div>
+
+      <div class="barra">
+        <label>🔮 Maná</label>
+        <div class="barra-container">
+          <div id="mana-barra-hechicero" class="barra-interna mana"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="marcoBarra">  
+      <div class="barra">
+        <label>❤️ Vida_</label>
+        <div class="barra-container">
+          <div id="vida-barra-heroe" class="barra-interna vida"></div>
+        </div>
+      </div>
+
+      <div class="barra">
+        <label>🔮 Maná</label>
+        <div class="barra-container">
+          <div id="mana-barra-heroe" class="barra-interna mana"></div>
+        </div>
+      </div>
+    </div>
+    
+        <div class="marcoBarra">  
+      <div class="barra">
+        <label>❤️ Vida_</label>
+        <div class="barra-container">
+          <div id="vida-barra-arquera" class="barra-interna vida"></div>
+        </div>
+      </div>
+
+      <div class="barra">
+        <label>🔮 Maná</label>
+        <div class="barra-container">
+          <div id="mana-barra-arquera" class="barra-interna mana"></div>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+    
+<div class="interfaz">
+  <div class="inferfazBotones"> 
+    <button id="ataqueNormalHechicero" onclick="Gandalf.atacar(ataqueHeroe,'hechicero' )">⚔️ Ataque normal ⚔️</button>  
+    <!--<button id="ataqueEspecialHechicero" onclick=""> 🔥Ataque especial 🔥</button>-->
+  </div>  
+  <div class="inferfazBotones"> 
+    <button id="ataqueNormalHeroe" onclick="Artur.atacar(ataqueHeroe,'heroe')">⚔️ Ataque normal ⚔️</button>  
+    <!--<button id="ataqueEspecialHeroe" onclick=""> 🔥Ataque especial 🔥</button> -->
+  </div>  
+  <div class="inferfazBotones"> 
+    <button id="ataqueNormalArquera" onclick="Xena.atacar(ataqueHeroe,'arquera')">⚔️ Ataque normal ⚔️</button>  
+    <!--<button id="ataqueEspecialArquera" onclick=""> 🔥Ataque especial 🔥</button> -->
+  </div>  
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</body>
+</html>

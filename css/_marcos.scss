@@ -1,0 +1,19 @@
+.marcoBoss{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.marcoHeroes{
+  display: flex;
+  justify-content: space-around;
+}
+
+.marcoCampoBatalla{    
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+}
+
