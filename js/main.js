@@ -32,7 +32,7 @@ class Boss
         console.log("cambia la imagen del boss");
         const boss = document.querySelector('.boss');
         boss.style.backgroundImage = "url('../assets/Diablo.png')"
-        document.getElementById("emojiBoss").textContent = "💀 Ganaste 💀"
+        document.getElementById("emojiBoss").textContent = "💀 Ganaste! 💀"
         return;
       }
 
