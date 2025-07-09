@@ -1,3 +1,5 @@
+//------------------Variables y Constantes-----------------
+
 const vidaBoss = 1000;
 const manaBoss = 10000;
 const ataqueBoss = 150;
@@ -10,6 +12,8 @@ let jefeFinal;
 let Artur;
 let Gandalf;
 let Xena;
+
+//-----------------Clases-----------------------------------------------
 
 class Boss
 {
@@ -89,7 +93,7 @@ class Heroe
     jefeFinal.recibirGolpe(ataque, personaje);
   }
 }
-
+//---------------------------------funciones----------------------
 function newGame() 
 {
   alert("¡Llegaste Jefe Final!");
@@ -104,6 +108,32 @@ function newGame()
   Artur = new Heroe(vidaHeroe);
   Gandalf = new Heroe(vidaHeroe);
   Xena = new Heroe(vidaHeroe);
+  contadorSesion(nombre);
+  guardarListado();
+}
+
+function contadorSesion(usuario){
+  let contador=0;
+
+  if(localStorage.getItem("juegos")===null){  
+    contador=1;
+    localStorage.setItem('juegos',contador)
+    localStorage.setItem('usuario',usuario)
+     }
+  else{
+    contador =  parseInt(localStorage.getItem("juegos"));
+    contador = contador + 1;
+    console.log(contador);
+    localStorage.setItem('juegos',contador);
+  }  
+};
+
+function guardarListado(){ 
+  fetch("json/datosGames.json")
+    .then(Response => Response.json())
+    .then(jugadores => {
+      localStorage.setItem("jugadores", JSON.stringify(jugadores));
+    })
 }
 
  //console.log("");
