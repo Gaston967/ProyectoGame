@@ -13,6 +13,17 @@ let Artur;
 let Gandalf;
 let Xena;
 
+let jugadores = [
+  { "nombre": "Ceci", "puntuacion": 1000 },
+  { "nombre": "Pepe", "puntuacion": 3000 },
+  { "nombre": "Bart", "puntuacion": 4000 },
+  { "nombre": "Luck", "puntuacion": 6000 },
+  { "nombre": "ALF", "puntuacion": 250 },
+  { "nombre": "HAl9000", "puntuacion": 5500 },
+  { "nombre": "Feanor", "puntuacion": 2000 },
+  { "nombre": "Doc", "puntuacion": 4300 }
+]
+
 //-----------------Clases-----------------------------------------------
 
 class Boss
@@ -129,12 +140,9 @@ function contadorSesion(usuario){
 };
 
 function guardarListado(){ 
-  fetch("json/datosGames.json")
-    .then(Response => Response.json())
-    .then(jugadores => {
       localStorage.setItem("jugadores", JSON.stringify(jugadores));
-    })
 }
+
 
  //console.log("");
 
