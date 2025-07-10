@@ -128,14 +128,14 @@ function contadorSesion(usuario){
 
   if(localStorage.getItem("juegos")===null){  
     contador=1;
-    localStorage.setItem('juegos',contador)
-    localStorage.setItem('usuario',usuario)
+    localStorage.setItem('juegos',JSON.stringify(contador));
+    localStorage.setItem('usuario',JSON.stringify(usuario));
      }
   else{
     contador =  parseInt(localStorage.getItem("juegos"));
     contador = contador + 1;
     console.log(contador);
-    localStorage.setItem('juegos',contador);
+    localStorage.setItem('juegos', JSON.stringify(contador));
   }  
 };
 
